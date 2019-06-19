@@ -14,17 +14,17 @@
     <div class="content-wrapper">
       <div class="columns">
         <div class="column is-6 is-offset-3">
-          <form name="contact"  method = "POST" data-netlify = "true" data-netlify-recaptcha="true" action ="#">
+          <form id="contact-form" name="contact"  method = "POST" data-netlify = "true" data-netlify-recaptcha="true" action ="#">
             <div class="columns is-multiline">
               <div class="column is-6">
-                <input class="input is-medium" type="text" placeholder="Your name" id="contact-name">
+                <input class="input is-medium" type="text" name = "name" placeholder="Your name" id="contact-name">
               </div>
               <div class="column is-6">
-                <input class="input is-medium" type="email" placeholder="Your email address" id="contact-email">
+                <input class="input is-medium" type="email" name = "email" placeholder="Your email address" id="contact-email">
               </div>
               <div data-netlify-recaptcha="true"></div>
               <div class="column is-12">
-                <textarea class="textarea" rows="10" placeholder="If you'd like to work with us, have some feedback, are looking for some advice or just want to chat, write your message here" id="contact-message"></textarea>
+                <textarea name = "message" class="textarea" rows="10" placeholder="If you'd like to work with us, have some feedback, are looking for some advice or just want to chat, write your message here" id="contact-message"></textarea>
               </div>
               <div class="form-footer has-text-centered mt-10">
                 <button class="button cta rounded is-large primary-btn raised is-clear" id="contact-button" type="button">Send Message</button>
