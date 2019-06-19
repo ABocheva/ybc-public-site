@@ -119,7 +119,7 @@ $(document).ready(function(){
 
     // Wire up contact form
 
-    function appendValidationMessage(content, message) {
+  /*  function appendValidationMessage(content, message) {
         if(content) {
             content += "<br/>";
         }
@@ -130,5 +130,5 @@ $(document).ready(function(){
     function validateEmail(email) {
         var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return re.test(String(email).toLowerCase());
-    }
+    }*/
 })
