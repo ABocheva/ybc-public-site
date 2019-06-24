@@ -15,7 +15,8 @@
       <div class="columns">
         <div class="column is-6 is-offset-3">
           <form id="contact-form" name="contactTest" method="POST" data-netlify-recaptcha="true" data-netlify="true">
-              <input class="input is-medium" type="text" name="name" placeholder="Your name" id="contact-name" />
+            <input type="hidden" value="contactTest" />
+            <input class="input is-medium" type="text" name="name" placeholder="Your name" id="contact-name" />
             <!--<div class="columns is-multiline">
               <div class="column is-6">
                 <input class="input is-medium" type="text" name="name" placeholder="Your name" id="contact-name" />
@@ -30,21 +31,21 @@
                   id="contact-message"></textarea>
               </div>
               -->
-              <div data-netlify-recaptach="true">&nbsp;</div>
-              <div class="form-footer has-text-centered mt-10">
-                <button class="button cta rounded is-large primary-btn raised is-clear" id="contact-button"
-                  type="submit">Send Message</button>
-              </div>
+            <div data-netlify-recaptach="true">&nbsp;</div>
+            <div class="form-footer has-text-centered mt-10">
+              <button class="button cta rounded is-large primary-btn raised is-clear" id="contact-button"
+                type="submit">Send Message</button>
             </div>
-          </form>
-          <p class="subtitle is-muted is-centered is-hidden" id="contact-success">Thanks, your message has been sent.
-            We'll be in touch soon.</p>
-          <p class="mt-40 has-text-danger is-hidden" id="contact-validation"></p>
-          <p class="mt-40 has-text-danger is-hidden" id="contact-error">Oops! Something went wrong and the message
-            didn't send. Try again and if it continues, please get in touch using Twitter or Facebook to let us know.
-          </p>
         </div>
+        </form>
+        <p class="subtitle is-muted is-centered is-hidden" id="contact-success">Thanks, your message has been sent.
+          We'll be in touch soon.</p>
+        <p class="mt-40 has-text-danger is-hidden" id="contact-validation"></p>
+        <p class="mt-40 has-text-danger is-hidden" id="contact-error">Oops! Something went wrong and the message
+          didn't send. Try again and if it continues, please get in touch using Twitter or Facebook to let us know.
+        </p>
       </div>
     </div>
+  </div>
   </div>
 </section>
